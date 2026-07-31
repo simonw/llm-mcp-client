@@ -1,6 +1,6 @@
 [project]
 name = "llm-mcp-client"
-version = "0.1"
+version = "0.1a0"
 description = "Access tools from MCP servers as LLM tools"
 readme = "README.md"
 authors = [{name = "Simon Willison"}]
