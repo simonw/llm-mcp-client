@@ -31,6 +31,17 @@ It works in `llm chat` too:
 llm chat -T 'MCP("https://example.com/mcp")'
 ```
 
+## Templates
+
+You can save an MCP to a named [LLM template](https://llm.datasette.io/en/latest/templates.html) like this:
+```bash
+llm -T 'MCP("https://datasette.simonwillison.net/-/mcp")' --save blog
+```
+Now you can query it without specifying the full tool definition like this:
+```bash
+llm -t blog 'count entries and notes'
+```
+
 ### Protocol modes
 
 By default the client negotiates the protocol automatically. You can force a specific mode with the `mode=` argument:
